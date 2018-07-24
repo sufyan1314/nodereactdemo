@@ -1,0 +1,70 @@
+.loginFormDiv{
+	max-width:400px;
+	height:400px;
+	background:#fff;
+	border:2px solid rgb(250,192,144);
+	border-radius:10px;
+	margin:0 auto;
+}
+#loginForm{
+	width:90%;
+	margin:0 auto;
+}
+.form-group{
+	width:100%;
+}
+.has-float-label {
+  position: relative;
+  width:100%;
+}
+.has-float-label label {
+  color:rgb(247,150,70);
+  position: absolute;
+  left: 0;
+  top: 0;
+  cursor: text;
+  font-size: 75%;
+  opacity: 1;
+  -webkit-transition: all .2s;
+  -moz-transition: all .2s;
+          transition: all .2s;
+  top: -.5em;
+  left: 0.75rem;
+  z-index: 3;
+  line-height: 1;
+  padding: 0 1px;
+}
+.has-float-label label::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  background: white;
+  height: 2px;
+  top: 50%;
+  left: -.2em;
+  right: -.2em;
+  z-index: -1;
+}
+.has-float-label .form-control::-webkit-input-placeholder {
+  opacity: 1;
+  -webkit-transition: all .2s;
+          transition: all .2s;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus)::placeholder {
+  opacity: 0;
+}
+.has-float-label .form-control:placeholder-shown:not(:focus) + label {
+  font-size: 100%;
+  color:gray;
+  opacity: .9;
+  top: .7em;
+  font-weight: normal;
+}
+.input-group .has-float-label {
+  display: table-cell;
+}
+.input-group .has-float-label .form-control {
+  border-radius: 6px !important;
+  width:100% !important;
+}
+
